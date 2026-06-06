@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary-pink: #e33e78;
+  --color-secondary-gray: #212b36;
+
+  /* Font Family */
+  --font-dm-sans: var(--font-dm-sans);
+}
+
+body {
+  @apply font-dm-sans bg-[#F9FAFB];
+}
+
+.container {
+  @apply max-w-415 mx-auto px-4 md:px-5 xl:px-12 2xl:px-5;
+}
