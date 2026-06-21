@@ -1,8 +1,8 @@
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
-import { ToastContainer } from "react-toastify";
 import QueryProvider from "@/provider/QueryProvider";
 import AuthProvider from "@/provider/AuthProvider";
+import ToastProvider from "@/provider/ToastProvider";
 
 // Fonts
 const dmSans = DM_Sans({
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <body>
         <QueryProvider>
           <AuthProvider>
-            <ToastContainer autoClose={2000} pauseOnHover={false} />
+            <ToastProvider />
             {children}
           </AuthProvider>
         </QueryProvider>

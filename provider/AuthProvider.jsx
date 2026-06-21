@@ -11,6 +11,7 @@ export default function AuthProvider({ children }) {
 
   useEffect(() => {
     if (!token) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setUser(null);
       setLoading(false);
       return;
